@@ -9,8 +9,10 @@ public class PrimeNumber {
             count=-1;
         else {
             for (int i = 2; i < number; i++) {
-                if (number % i == 0)
+                if (number % i == 0) {
                     count++;
+                    break;  // Improved performance by escaping for loop on first divisor found
+                }
             }
         }
         if (count==0)
