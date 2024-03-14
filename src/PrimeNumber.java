@@ -8,7 +8,7 @@ public class PrimeNumber {
         if(number<2)
             count=-1;
         else {
-            for (int i = 2; i < number; i++) {
+            for (int i = 2; i *i < number+1; i++) {
                 if (number % i == 0) {
                     count++;
                     break;  // Improved performance by escaping for loop on first divisor found
