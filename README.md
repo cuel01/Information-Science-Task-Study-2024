@@ -1,0 +1,1 @@
+This is a remote repository for the class "Information Science Task Study" at Incheon National University of Science and Technology in the first semester of the 2024 academic year. This repository is used to upload and manage program code and lab examples studied in the class. 
