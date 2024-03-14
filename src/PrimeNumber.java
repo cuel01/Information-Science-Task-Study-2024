@@ -14,20 +14,19 @@ public class PrimeNumber {
         boolean isPrimeNumber = true;
 
         for (int k=numberStart; k<=numberEnd; k++){
-            isPrimeNumber = true;
-            if(k<2)
-                isPrimeNumber = false;
-            else {
-                for (int i = 2; i *i < k+1; i++) {
-                    if (k % i == 0) {
-                        //count++
-                        isPrimeNumber = false;
-                        break;
-                    }
+            if (isPrimeNumber(k)) System.out.print(k+" ");
+        }
+    }
+    private static boolean isPrimeNumber(int n){
+        if(n<2)
+            return false;
+        else {
+            for (int i = 2; i *i < n+1; i++) {
+                if (n % i == 0) {
+                    return false;
                 }
             }
-            if (isPrimeNumber)
-                System.out.print(k+" ");
         }
+        return true;
     }
 }
