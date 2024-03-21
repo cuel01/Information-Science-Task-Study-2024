@@ -5,8 +5,8 @@ class Pokemon{
         System.out.println("default constructor!");
     }
     public Pokemon(String name, int hp) {  //default constructor
-        this.name=name;
-        this.hp=hp;
+        name=name;
+        hp=hp;
         System.out.println("parameter constructor!");
     }
 
@@ -32,5 +32,6 @@ public class PokemonGame {
         p1.setHp(60);
         p1.setName("PPiKKaCChu");
         System.out.println(p1.getName()+"'s health is "+p1.getHp()+".");
+        System.out.println(p2.getName()+"'s health is "+p2.getHp()+"."); //null's hp is 0
     }
 }
