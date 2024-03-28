@@ -10,7 +10,6 @@ public class PokemonGame {
         c1.setName("liza");
         Pikachu p1 = new Pikachu("Pikachu", 70);
         Squirtle s2 = new Squirtle("SQRT", 90);
-        c1.fly();
         s2.attack(p1);
         p1.attack(s2);
         c1.attack();
