@@ -7,9 +7,11 @@ public class PokemonGame {
 //        Pokemon p1 = new Pokemon();
 //        p1.info();
         Pikachu pika1 = new Pikachu("Pikachu", 70);
-        pika1.info();
+//        pika1.info();
         Squirtle s2 = new Squirtle("SQRT", 90);
-        s2.info();
+//        s2.info();
+        pika1.attack();
+        s2.attack();
         /*
         Pikachu pika1 = new Pikachu("Pikachu",  50);
         Pikachu pika2 = new Pikachu();
