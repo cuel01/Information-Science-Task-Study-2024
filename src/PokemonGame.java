@@ -1,11 +1,17 @@
-import pokemons.Charizard;
-import pokemons.Pikachu;
-import pokemons.Pokemon;
-import pokemons.Squirtle;
+import pokemons.*;
 
 public class PokemonGame {
     public static void main(String[] args) {
-        Charizard c1=new Charizard();
+        Charizard c1 = new Charizard();
+        Pikachu p1 = new Pikachu();
+        p1.setFlyable(new NoFly());
+        c1.setFlyable(new Wings());
+        c1.performFly();
+        p1.performFly();
+        Rocket rocket = new Rocket();
+        p1.setFlyable(rocket);
+        p1.performFly();
+        /*Charizard c1=new Charizard();
         c1.setHp(1040);
         c1.setName("liza");
         Pikachu p1 = new Pikachu("Pikachu", 70);
@@ -14,6 +20,6 @@ public class PokemonGame {
         p1.attack(s2);
         c1.attack();
         c1.attack(p1);
-        c1.attack(s2);
+        c1.attack(s2);*/
     }
 }

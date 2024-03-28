@@ -6,7 +6,7 @@ public abstract class  Pokemon{
     public void setFlyable(Flyable flyable) {
         this.flyable = flyable;
     }
-    public void performFlyable(){
+    public void performFly(){
         this.flyable.fly();
     }
     public Pokemon(){
