@@ -26,4 +26,9 @@ public class Pokemon{
     public void setHp(int hp) {
         this.hp = hp;
     }
+    public void info(){
+        System.out.println("Name : "+getName());
+        System.out.println("Hp : "+getHp());
+        System.out.println("Name : "+getName());
+    }
 }

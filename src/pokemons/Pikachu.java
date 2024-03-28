@@ -7,4 +7,10 @@ public class Pikachu  extends Pokemon{
 
     public Pikachu() {
     }
+
+    @Override
+    public void info() {
+        super.info();
+        System.out.println("Electric");
+    }
 }
