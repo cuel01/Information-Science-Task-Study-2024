@@ -16,6 +16,11 @@ public class Squirtle extends Pokemon{
 
     @Override
     public void attack() {
-        System.out.println("Water cannon attack!");
+        System.out.println("Wide area Water Cannon Attack!!!");
+    }
+
+    @Override
+    public void attack(Pokemon targetPokemon) {
+        System.out.println("Performs a water cannon attack on "+targetPokemon.getName()+".");
     }
 }

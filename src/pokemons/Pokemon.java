@@ -31,4 +31,5 @@ public abstract class  Pokemon{
         System.out.println("Hp : "+getHp());
     }
     public  abstract void attack();
+    public  abstract void attack(Pokemon targetPokemon);
 }
