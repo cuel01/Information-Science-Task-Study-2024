@@ -1,5 +1,5 @@
 package pokemons;
-public class Pokemon{
+public abstract class  Pokemon{
     private String name;
     private int hp;
     public Pokemon(){
@@ -29,6 +29,5 @@ public class Pokemon{
     public void info(){
         System.out.println("Name : "+getName());
         System.out.println("Hp : "+getHp());
-        System.out.println("Name : "+getName());
     }
 }

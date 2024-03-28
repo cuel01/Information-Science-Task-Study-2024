@@ -4,6 +4,8 @@ import pokemons.Squirtle;
 
 public class PokemonGame {
     public static void main(String[] args) {
+//        Pokemon p1 = new Pokemon();
+//        p1.info();
         Pikachu pika1 = new Pikachu("Pikachu", 70);
         pika1.info();
         Squirtle s2 = new Squirtle("SQRT", 90);
