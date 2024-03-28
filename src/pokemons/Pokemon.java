@@ -7,6 +7,7 @@ public abstract class  Pokemon{
         this.flyable = flyable;
     }
     public void performFly(){
+        System.out.print(this.getName());
         this.flyable.fly();
     }
     public Pokemon(){
