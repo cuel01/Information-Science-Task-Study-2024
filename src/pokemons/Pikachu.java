@@ -3,14 +3,10 @@ package pokemons;
 public class Pikachu  extends Pokemon{
     public Pikachu(String name, int hp) {
         super(name, hp);
+        super.setFlyable(new NoFly());
     }
 
     public Pikachu() {
-    }
-
-    public Pikachu(String name, int hp, Flyable fly) {
-        super(name, hp);
-        super.setFlyable(fly);
     }
 
     @Override

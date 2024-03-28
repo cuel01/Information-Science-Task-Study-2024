@@ -1,10 +1,12 @@
 package pokemons;
 
 public class Charizard extends Pokemon{
+    public Charizard() {
+    }
 
-    public Charizard(String name, int hp, Flyable fly) {
+    public Charizard(String name, int hp) {
         super(name, hp);
-        super.setFlyable(fly);
+        super.setFlyable(new Wings());
     }
 
     @Override
