@@ -2,6 +2,11 @@ package pokemons;
 
 public class Charizard extends Pokemon{
 
+    public Charizard(String name, int hp, Flyable fly) {
+        super(name, hp);
+        super.setFlyable(fly);
+    }
+
     @Override
     public void attack() {
         System.out.println("Wide area Fire Attack!!!");

@@ -8,6 +8,11 @@ public class Pikachu  extends Pokemon{
     public Pikachu() {
     }
 
+    public Pikachu(String name, int hp, Flyable fly) {
+        super(name, hp);
+        super.setFlyable(fly);
+    }
+
     @Override
     public void info() {
         super.info();
