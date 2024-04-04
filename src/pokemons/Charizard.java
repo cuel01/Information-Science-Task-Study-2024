@@ -1,5 +1,4 @@
 package pokemons;
-//dddd
 public class Charizard extends Pokemon{
     public Charizard() {
     }
