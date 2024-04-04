@@ -7,24 +7,24 @@ public class PokemonGame {
     public static void main(String[] args) {
 
         Random random = new Random();
-        random.setSeed(32);
+        random.setSeed(1023);
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Choose your pokemonster. 1) Pikachu(default) 2) SQRT 3) Charizard : ");
         int select =scanner.nextInt();
 
         Pokemon playerPokemon, wildPokemon;
-        if(select==1) playerPokemon = new Pikachu("Pika", 30);
-        else if (select==2) playerPokemon = new Squirtle("sqrt", 50);
-        else if (select==3) playerPokemon = new Charizard("liza", 70);
+        if(select==1) playerPokemon = new Pikachu("Pika", 59);
+        else if (select==2) playerPokemon = new Squirtle("sqrt", 66);
+        else if (select==3) playerPokemon = new Charizard("liza", 100);
         else playerPokemon = new Pikachu("Pika", 29); // default
 
 
         System.out.println("A wild Pokemon has BBaBBam");
         select = random.nextInt(3);
-        if(select==0) wildPokemon = new Pikachu("Pika", 30);
-        else if (select==1) wildPokemon = new Squirtle("sqrt", 50);
-        else if (select==2) wildPokemon = new Charizard("liza", 70);
+        if(select==0) wildPokemon = new Pikachu("Pika", 59);
+        else if (select==1) wildPokemon = new Squirtle("sqrt", 66);
+        else if (select==2) wildPokemon = new Charizard("liza", 100);
         else wildPokemon = new Pikachu("Pika", 29); // default
 
         while (true) {

@@ -2,6 +2,7 @@ package pokemons;
 public abstract class  Pokemon{
     private String name;
     private int hp;
+    protected int attackPoint;
     Flyable flyable;
     public void setFlyable(Flyable flyable) {
         this.flyable = flyable;
