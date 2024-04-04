@@ -1,6 +1,7 @@
 package pokemons;
 public class Charizard extends Pokemon{
     public Charizard() {
+        System.out.println("Lizzzzzzzza");
     }
 
     public Charizard(String name, int hp) {

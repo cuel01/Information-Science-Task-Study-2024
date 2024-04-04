@@ -13,7 +13,6 @@ public abstract class  Pokemon{
     public Pokemon(){
         this.name="nameless";
         this.hp=10;
-        System.out.println("default constructor!");
     }
     public Pokemon(String name, int hp) {
         this.name=name;

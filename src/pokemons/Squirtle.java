@@ -2,6 +2,7 @@ package pokemons;
 
 public class Squirtle extends Pokemon{
     public Squirtle() {
+        System.out.println("Sqrrrrrrrt");
     }
 
     public Squirtle(String name, int hp) {
