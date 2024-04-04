@@ -9,6 +9,8 @@ public class Squirtle extends Pokemon{
         super(name, hp);
         super.setFlyable(new NoFly());
         this.attackPoint=12;
+        this.skills = new String[]{"body slam", "water cannon", "hydro pump"};
+        this.skillPoints= new int[]{35, 40, 110};
         System.out.println("Sqrrrrrrrt");
     }
 
@@ -24,8 +26,8 @@ public class Squirtle extends Pokemon{
     }
 
     @Override
-    public void attack(Pokemon targetPokemon) {
-        targetPokemon.setHp(targetPokemon.getHp()-this.attackPoint);
+    public void attack(Pokemon targetPokemon, int s) {
+        targetPokemon.setHp(targetPokemon.getHp()-(this.attackPoint+this.skillPoints[s]));
         System.out.println(this.getName()+" attacks "+targetPokemon.getName()+" with a water cannon.");
         System.out.println("The health of the wild Pokemon "+targetPokemon.getName()+" has been reduces to "+targetPokemon.getHp()+" due to "+this.getName()+"'s attack.");
     }

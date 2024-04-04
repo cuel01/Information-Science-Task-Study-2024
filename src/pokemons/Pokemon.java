@@ -3,6 +3,8 @@ public abstract class  Pokemon{
     private String name;
     private int hp;
     protected int attackPoint;
+    protected String[] skills;
+    protected int[] skillPoints;
     Flyable flyable;
     public void setFlyable(Flyable flyable) {
         this.flyable = flyable;
@@ -37,7 +39,7 @@ public abstract class  Pokemon{
         System.out.println("Hp : "+getHp());
     }
     public  abstract void attack();
-    public  abstract void attack(Pokemon targetPokemon);
+    public  abstract void attack(Pokemon targetPokemon, int s);
 
     //public abstract void fly();
 }
