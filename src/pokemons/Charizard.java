@@ -7,6 +7,7 @@ public class Charizard extends Pokemon{
     public Charizard(String name, int hp) {
         super(name, hp);
         super.setFlyable(new Wings());
+        System.out.println("Lizzzzzzzza");
     }
 
     @Override

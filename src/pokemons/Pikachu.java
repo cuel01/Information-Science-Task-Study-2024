@@ -4,6 +4,7 @@ public class Pikachu  extends Pokemon{
     public Pikachu(String name, int hp) {
         super(name, hp);
         super.setFlyable(new NoFly());
+        System.out.println("Pika Pika");
     }
 
     public Pikachu() {
