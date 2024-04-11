@@ -39,7 +39,7 @@ public class PokemonGame {
                 System.out.print("\t1) "+playerPokemon.skills[0]+" 2) "+playerPokemon.skills[1]+" 3) "+playerPokemon.skills[2]+" : ");
                 int skill = scanner.nextInt()-1;
                 playerPokemon.attack(wildPokemon, skill);
-                wildPokemon.attack(playerPokemon, skill);
+                //wildPokemon.attack(playerPokemon, skill);
             } else if (menu==2){
                 System.out.println("your pokemon run away");
             }
