@@ -1,6 +1,7 @@
 package pokemons;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Charizard extends Pokemon{
     public Charizard() {
@@ -14,15 +15,19 @@ public class Charizard extends Pokemon{
         //this.skills = new String[]{"claw", "dragon's breath", "Flare Drive"};
         //this.skillPoints=new int[]{40, 60, 120};
 
-        this.skills = new ArrayList<>();
-        this.skills.add("claw");
-        this.skills.add("dragon's breath");
-        this.skills.add("Flare Drive");
+        this.skills = new ArrayList<>(
+                Arrays.asList("claw", "dragon's breath", "Flare Drive")
+        );
+//        this.skills.add("claw");
+//        this.skills.add("dragon's breath");
+//        this.skills.add("Flare Drive");
 
-        this.skillPoints = new ArrayList<>();
-        this.skillPoints.add(40);
-        this.skillPoints.add(60);
-        this.skillPoints.add(120);
+        this.skillPoints = new ArrayList<>(
+                Arrays.asList(40, 60, 90)
+        );
+//        this.skillPoints.add(40);
+//        this.skillPoints.add(60);
+//        this.skillPoints.add(120);
 
         System.out.println("Lizzzzzzzza");
     }
@@ -36,6 +41,6 @@ public class Charizard extends Pokemon{
     public void attack(Pokemon targetPokemon, int s) {
         targetPokemon.setHp(targetPokemon.getHp()-(this.attackPoint+this.skillPoints.get(s)));
         System.out.println(this.getName()+" fires a "+this.skills.get(s)+" attack at "+targetPokemon.getName()+".");
-        System.out.println("The health of the wild Pokemon "+targetPokemon.getName()+" has been reduces to "+targetPokemon.getHp()+" due to "+this.getName()+"'s attack.");
+        System.out.println("The health of the "+targetPokemon.getName()+" has been reduces to "+targetPokemon.getHp()+" due to "+this.getName()+"'s attack.");
     }
 }

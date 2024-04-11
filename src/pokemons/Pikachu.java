@@ -1,6 +1,7 @@
 package pokemons;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Pikachu  extends Pokemon{
     public Pikachu(String name, int hp) {
@@ -11,15 +12,19 @@ public class Pikachu  extends Pokemon{
         //this.skills = new String[]{"cheeks bulging", "electric shock", "100,000 volts"};
         //this.skillPoints=new int[]{20, 40, 90};
 
-        this.skills = new ArrayList<>();
-        this.skills.add("cheeks bulging");
-        this.skills.add("electric shock");
-        this.skills.add("100,000 volts");
+        this.skills = new ArrayList<>(
+                Arrays.asList("cheeks bulging", "electric shock", "100,000 volts")
+        );
+        //this.skills.add("cheeks bulging");
+        //this.skills.add("electric shock");
+        //this.skills.add("100,000 volts");
 
-        this.skillPoints = new ArrayList<>();
-        this.skillPoints.add(20);
-        this.skillPoints.add(40);
-        this.skillPoints.add(90);
+        this.skillPoints = new ArrayList<>(
+                Arrays.asList(20, 40, 90)
+        );
+        //this.skillPoints.add(20);
+        //this.skillPoints.add(40);
+        //this.skillPoints.add(90);
 
         System.out.println("Pika Pika");
     }
@@ -43,6 +48,6 @@ public class Pikachu  extends Pokemon{
     public void attack(Pokemon targetPokemon, int s) {
         targetPokemon.setHp(targetPokemon.getHp()-(this.attackPoint+this.skillPoints.get(s)));
         System.out.println(this.getName()+" makes a "+this.skills.get(s)+" at "+targetPokemon.getName()+".");
-        System.out.println("The health of the wild Pokemon "+targetPokemon.getName()+" has been reduces to "+targetPokemon.getHp()+" due to "+this.getName()+"'s attack.");
+        System.out.println("The health of the "+targetPokemon.getName()+" has been reduces to "+targetPokemon.getHp()+" due to "+this.getName()+"'s attack.");
     }
 }
