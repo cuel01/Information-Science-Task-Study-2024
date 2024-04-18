@@ -20,7 +20,7 @@ public class PokemonGame {
     }
     public static void main(String[] args) {
 
-        //Random random = new Random();
+        Random random = new Random();
         //random.setSeed(1023);
 
         Scanner scanner = new Scanner(System.in);
@@ -47,6 +47,7 @@ public class PokemonGame {
                 int skill = scanner.nextInt()-1;
                 playerPokemon.attack(wildPokemon, skill);
                 System.out.println("================");
+                skill = random.nextInt(3);
                 wildPokemon.attack(playerPokemon, skill);
             } else if (menu==2){
                 System.out.println("your pokemon run away");
