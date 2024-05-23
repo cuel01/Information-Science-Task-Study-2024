@@ -1,5 +1,6 @@
 package pokemons;
 
+import javax.lang.model.type.ArrayType;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -15,9 +16,7 @@ public class Squirtle extends Pokemon{
         //this.skills = new String[]{"body slam", "water cannon", "hydro pump"};
         //this.skillPoints= new int[]{35, 40, 110};
 
-        this.skills = new ArrayList<>(
-                Arrays.asList("body slam", "water cannon", "hydro pump")
-        );
+        this.skills = new ArrayList<>( Arrays.asList("body slam", "water cannon", "hydro pump"));
         //this.skills.add("body slam");
         //this.skills.add("water cannon");
         //this.skills.add("hydro pump");
