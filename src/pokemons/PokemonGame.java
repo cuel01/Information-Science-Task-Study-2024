@@ -45,14 +45,15 @@ public class PokemonGame {
                 break;
             } else if (menu==1){
                 //System.out.print("\t1) "+playerPokemon.skills.get(1)+" 2) "+playerPokemon.skills.get(2)+" 3) "+playerPokemon.skills.get(3)+" : ");
-                for(Map.Entry<Integer, String> mapSkill: playerPokemon.getSkills().entrySet()){
-                    System.out.print(mapSkill.getKey()+") 2"+mapSkill.getValue()+" ");
-                }
+   //             for(Map.Entry<Integer, String> mapSkill: playerPokemon.getSkills().entrySet()){
+     //               System.out.print(mapSkill.getKey()+") 2"+mapSkill.getValue()+" ");
+       //         }
+                playerPokemon.getSkills().forEach((k, v) -> System.out.print(k+") "+v+" "));
                 System.out.print(" : ");
                 int skill = scanner.nextInt();
                 playerPokemon.attack(wildPokemon, skill);
                 System.out.println("================");
-                skill = random.nextInt(3);
+                skill = random.nextInt(3)+1;
                 wildPokemon.attack(playerPokemon, skill);
             } else if (menu==2){
                 System.out.println("your pokemon run away");
