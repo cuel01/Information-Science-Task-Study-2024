@@ -33,7 +33,7 @@ public class PokemonGame {
         else if (select==3) playerPokemon = new Charizard("liza", 100);
         else playerPokemon = new Pikachu("Pika", 29); // default
 
-        // enemyPokemon
+        // enemyPokemon11
         produceEnemyPokemon();
 
         while (true) {
