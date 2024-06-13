@@ -12,6 +12,7 @@ public abstract class  Pokemon{
 //    protected List<String> skills;
 //    protected List<Integer> skillPoints;
     protected Map<Integer, String> skills;
+    protected Map<String, Integer> skillPoints;
     Flyable flyable;
     public void setFlyable(Flyable flyable) {
         this.flyable = flyable;
@@ -49,4 +50,8 @@ public abstract class  Pokemon{
     public  abstract void attack(Pokemon targetPokemon, int s);
 
     //public abstract void fly();
+
+    public Map<Integer, String> getSkills() {
+        return skills;
+    }
 }
