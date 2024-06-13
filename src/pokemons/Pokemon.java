@@ -1,6 +1,7 @@
 package pokemons;
 
 import java.util.List;
+import java.util.Map;
 
 public abstract class  Pokemon{
     private String name;
@@ -8,8 +9,9 @@ public abstract class  Pokemon{
     protected int attackPoint;
     //protected String[] skills;
     //protected int[] skillPoints;
-    protected List<String> skills;
-    protected List<Integer> skillPoints;
+//    protected List<String> skills;
+//    protected List<Integer> skillPoints;
+    protected Map<Integer, String> skills;
     Flyable flyable;
     public void setFlyable(Flyable flyable) {
         this.flyable = flyable;
