@@ -2,6 +2,7 @@ package pokemons;
 
 import pokemons.*;
 
+import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -43,7 +44,11 @@ public class PokemonGame {
                 System.out.println("Exit the program...");
                 break;
             } else if (menu==1){
-                System.out.print("\t1) "+playerPokemon.skills.get(1)+" 2) "+playerPokemon.skills.get(2)+" 3) "+playerPokemon.skills.get(3)+" : ");
+                //System.out.print("\t1) "+playerPokemon.skills.get(1)+" 2) "+playerPokemon.skills.get(2)+" 3) "+playerPokemon.skills.get(3)+" : ");
+                for(Map.Entry<Integer, String> mapSkill: playerPokemon.getSkills().entrySet()){
+                    System.out.print(mapSkill.getKey()+") 2"+mapSkill.getValue()+" ");
+                }
+                System.out.print(" : ");
                 int skill = scanner.nextInt();
                 playerPokemon.attack(wildPokemon, skill);
                 System.out.println("================");
