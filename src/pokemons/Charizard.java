@@ -50,7 +50,7 @@ public class Charizard extends Pokemon{
 
     @Override
     public void attack(Pokemon targetPokemon, int s) {
-        targetPokemon.setHp(targetPokemon.getHp()-(this.attackPoint+this.skillPoints.get(s)));
+        targetPokemon.setHp(targetPokemon.getHp()-(this.attackPoint+this.skillPoints.get(this.skills.get(s))));
         System.out.println(this.getName()+" fires a "+this.skills.get(s)+" attack at "+targetPokemon.getName()+".");
         System.out.println("The health of the "+targetPokemon.getName()+" has been reduces to "+targetPokemon.getHp()+" due to "+this.getName()+"'s attack.");
     }
