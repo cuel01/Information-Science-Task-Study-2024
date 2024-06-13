@@ -2,6 +2,7 @@ package pokemons;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class Squirtle extends Pokemon{
     public Squirtle() {
@@ -15,16 +16,19 @@ public class Squirtle extends Pokemon{
         //this.skills = new String[]{"body slam", "water cannon", "hydro pump"};
         //this.skillPoints= new int[]{35, 40, 110};
 
-        this.skills = new ArrayList<>(
-                Arrays.asList("body slam", "water cannon", "hydro pump")
-        );
+
+        this.skills = new HashMap<>();
+        skills.put(1, "body slam");
+        skills.put(2, "water cannon");
+        skills.put(3, "hydro pump");
         //this.skills.add("body slam");
         //this.skills.add("water cannon");
         //this.skills.add("hydro pump");
 
-        this.skillPoints = new ArrayList<>(
-                Arrays.asList(35, 40, 110)
-        );
+        this.skillPoints = new HashMap<>();
+        skillPoints.put("body slam", 35);
+        skillPoints.put("water cannon", 40);
+        skillPoints.put("hydro pump", 110);
         //this.skillPoints.add(35);
         //this.skillPoints.add(40);
         //this.skillPoints.add(110);
