@@ -12,12 +12,13 @@ public class PokemonGame {
         Random random = new Random();
 
         System.out.println("A wild Pokemon has BBaBBam");
-        int select = random.nextInt(3);
-        if(select==0) wildPokemon = new Pikachu("Pika", 59);
-        else if (select==1) wildPokemon = new Squirtle("sqrt", 66);
-        else if (select==2) wildPokemon = new Charizard("liza", 100);
-        else wildPokemon = new Pikachu("Pika", 29); // default
 
+        wildPokemon = switch (random.nextInt(3)){
+            case 0->new Pikachu("Pika", 59);
+            case 1->new Squirtle("sqrt", 66);
+            case 2->new Charizard("liza", 100);
+            default ->new Pikachu("Pika", 59);
+        };
     }
     public static void main(String[] args) {
 
