@@ -28,11 +28,17 @@ public class PokemonGame {
         System.out.print("Choose your pokemonster. 1) Pikachu(default) 2) SQRT 3) Charizard : ");
         int select =scanner.nextInt();
 
-        Pokemon playerPokemon;
-        if(select==1) playerPokemon = new Pikachu("Pika", 59);
-        else if (select==2) playerPokemon = new Squirtle("sqrt", 66);
-        else if (select==3) playerPokemon = new Charizard("liza", 100);
-        else playerPokemon = new Pikachu("Pika", 29); // default
+        //Pokemon playerPokemon;
+        //if(select==1) playerPokemon = new Pikachu("Pika", 59);
+        //else if (select==2) playerPokemon = new Squirtle("sqrt", 66);
+        //else if (select==3) playerPokemon = new Charizard("liza", 100);
+        //else playerPokemon = new Pikachu("Pika", 29); // default
+        Pokemon playerPokemon = switch (select){
+            case 1->new Pikachu("Pika", 59);
+            case 2->new Squirtle("sqrt", 66);
+            case 3->new Charizard("liza", 100);
+            default ->new Pikachu("Pika", 59);
+        };
 
         // enemyPokemon11
         produceEnemyPokemon();
